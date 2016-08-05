@@ -1,12 +1,12 @@
 {
-  "name": "gentelella",
-  "version": "1.2.0",
+  "name": "filmstock",
+  "version": "3.0",
   "filmpage": "https://colorlib.com/polygon/gentelella/index.html",
   "authors": [
-    "Aigars Silkalns",
-    "Christian Esperar"
+    "Anthony D. Custable",
+    "Alex M. Kennedy"
   ],
-  "description": "Filmstock Admin is a free to use Bootstrap admin template",
+  "description": "Filmstock",
   "keywords": [
     "css",
     "js",
