@@ -11,6 +11,9 @@ Now you can code, code and code!
 Submit a pull request
 
 
+run this: npm install --global gulp-cli
+
+
 Below are the dependencies needed to run Filmstock:
 
 gulp = require('gulp'),
