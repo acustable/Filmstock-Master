@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+
+<!-- Header -->
+<head>
+<title></title>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(function(){
+  $("#header").load("header.html");
+});
+</script>
+<div id="header"></div>
+<!--Remaining section-->
+<!-- Header -->
+
+<html lang="en">
+</section>
+<section class="fullsize-video-bg">
+  <div class="inner">
+  </div>
+  <div id="video-viewport">
+    <video width="1920" height="1280" autoplay muted loop>
+      <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/NYC-Traffic.mp4" type="video/mp4" />
+    </video>
+  </div>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+    <title>Filmstock</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- jVectorMap -->
+    <link href="css/maps/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
+
+    <!-- Global CSS -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+
+  <!-- Filmstock of the week slider -->
+  <html>
+      <link rel="stylesheet" href="css/slider.css">
+
+      <div class="slider-container">
+    <div class="slider-control left inactive"></div>
+    <div class="slider-control right"></div>
+    <ul class="slider-pagi"></ul>
+    <div class="slider">
+      <div class="slide slide-0 active">
+        <div class="slide__bg"></div>
+        <div class="slide__content">
+          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+          </svg>
+          <div class="slide__text">
+            <h2 class="slide__text-heading">Living Love</h2>
+            <p class="slide__text-desc">In the aftermath of the 1992 L.A. riots, something truly remarkable happened at the intersection of 41st Street and Alameda Avenue thanks to an uncharacteristically charitable move by the city government; where once existed a barren field littered with garbage and syringes suddenly appeared a 14-acre community garden.</p>
+            <a class="slide__text-link">Watch Now</a>
+            <p class="slide_text-directedby">Directed By: <a class="slide_text-director">Cameron Bishop</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide slide-1 ">
+        <div class="slide__bg"></div>
+        <div class="slide__content">
+          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+          </svg>
+          <div class="slide__text">
+            <h2 class="slide__text-heading">The System</h2>
+            <p class="slide__text-desc">Sergeant Major Zak Carey is serving what is his final tour of duty at an Army base in Clemens, Georgia. Zak doesn't like the way the Army keeps the base and the bar is not what he's accustomed to. So he goes off base to get a beer. When he goes to the bar one of the local prostitutes tries to come on to Zak but Zak turns her down.</p>
+            <a class="slide__text-link">Watch Now</a>
+            <p class="slide_text-directedby">Directed By: <a class="slide_text-director">Samantha Lee</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide slide-2">
+        <div class="slide__bg"></div>
+        <div class="slide__content">
+          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+          </svg>
+          <div class="slide__text">
+            <h2 class="slide__text-heading">Live and Fall</h2>
+            <p class="slide__text-desc">A bizarre series of murders in New York City seems to point toward the existence of a race of mutant cannibals living under the streets.</p>
+            <a class="slide__text-link">Watch Now</a>
+            <p class="slide_text-directedby">Directed By: <a class="slide_text-director">Javier Chavez</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide slide-3">
+        <div class="slide__bg"></div>
+        <div class="slide__content">
+          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+          </svg>
+          <div class="slide__text">
+            <h2 class="slide__text-heading">64th and West</h2>
+            <p class="slide__text-desc">Franky West gathers a group of his World War II compatriots to pull off the ultimate heist. Together the friends plan to rob five Japanese Casinos in one night.</p>
+            <a class="slide__text-link">Watch Now</a>
+            <p class="slide_text-directedby">Directed By: <a class="slide_text-director">Antonio I'frezello</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+          <script>$(document).ready(function() {
+
+    var $slider = $(".slider"),
+        $slideBGs = $(".slide__bg"),
+        diff = 0,
+        curSlide = 0,
+        numOfSlides = $(".slide").length-1,
+        animating = false,
+        animTime = 500,
+        autoSlideTimeout,
+        autoSlideDelay = 6000,
+        $pagination = $(".slider-pagi");
+
+    function createBullets() {
+      for (var i = 0; i < numOfSlides+1; i++) {
+        var $li = $("<li class='slider-pagi__elem'></li>");
+        $li.addClass("slider-pagi__elem-"+i).data("page", i);
+        if (!i) $li.addClass("active");
+        $pagination.append($li);
+      }
+    };
+
+    createBullets();
+
+    function manageControls() {
+      $(".slider-control").removeClass("inactive");
+      if (!curSlide) $(".slider-control.left").addClass("inactive");
+      if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
+    };
+
+    function autoSlide() {
+      autoSlideTimeout = setTimeout(function() {
+        curSlide++;
+        if (curSlide > numOfSlides) curSlide = 0;
+        changeSlides();
+      }, autoSlideDelay);
+    };
+
+    autoSlide();
+
+    function changeSlides(instant) {
+      if (!instant) {
+        animating = true;
+        manageControls();
+        $slider.addClass("animating");
+        $slider.css("top");
+        $(".slide").removeClass("active");
+        $(".slide-"+curSlide).addClass("active");
+        setTimeout(function() {
+          $slider.removeClass("animating");
+          animating = false;
+        }, animTime);
+      }
+      window.clearTimeout(autoSlideTimeout);
+      $(".slider-pagi__elem").removeClass("active");
+      $(".slider-pagi__elem-"+curSlide).addClass("active");
+      $slider.css("transform", "translate3d("+ -curSlide*100 +"%,0,0)");
+      $slideBGs.css("transform", "translate3d("+ curSlide*50 +"%,0,0)");
+      diff = 0;
+      autoSlide();
+    }
+
+    function navigateLeft() {
+      if (animating) return;
+      if (curSlide > 0) curSlide--;
+      changeSlides();
+    }
+
+    function navigateRight() {
+      if (animating) return;
+      if (curSlide < numOfSlides) curSlide++;
+      changeSlides();
+    }
+
+    $(document).on("mousedown touchstart", ".slider", function(e) {
+      if (animating) return;
+      window.clearTimeout(autoSlideTimeout);
+      var startX = e.pageX || e.originalEvent.touches[0].pageX,
+          winW = $(window).width();
+      diff = 0;
+
+      $(document).on("mousemove touchmove", function(e) {
+        var x = e.pageX || e.originalEvent.touches[0].pageX;
+        diff = (startX - x) / winW * 70;
+        if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
+        $slider.css("transform", "translate3d("+ (-curSlide*100 - diff) +"%,0,0)");
+        $slideBGs.css("transform", "translate3d("+ (curSlide*50 + diff/2) +"%,0,0)");
+      });
+    });
+
+    $(document).on("mouseup touchend", function(e) {
+      $(document).off("mousemove touchmove");
+      if (animating) return;
+      if (!diff) {
+        changeSlides(true);
+        return;
+      }
+      if (diff > -8 && diff < 8) {
+        changeSlides();
+        return;
+      }
+      if (diff <= -8) {
+        navigateLeft();
+      }
+      if (diff >= 8) {
+        navigateRight();
+      }
+    });
+
+    $(document).on("click", ".slider-control", function() {
+      if ($(this).hasClass("left")) {
+        navigateLeft();
+      } else {
+        navigateRight();
+      }
+    });
+
+    $(document).on("click", ".slider-pagi__elem", function() {
+      curSlide = $(this).data("page");
+      changeSlides();
+    });
+
+  });</script>
+
+
+
+
+  </html>
+  <!-- Filmstock of the week slider -->
+
+          <!-- categories Sections -->
+          <div class="row">
+                <div class="maincol">
+                  <h1 style="
+  margin-left: 52px;
+  color: #fff;
+">Trending Now </h1>
+                  <!-- Enable responsive view on mobile devices -->
+                <body class="no-touch">
+                  <div class="wrap">
+                    <!-- Define all of the tiles: -->
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="https://donnycam.files.wordpress.com/2012/06/img_0467.jpg" />
+                        <div class="playhover">
+                          <a href="#">
+                            <span class="play">&#9658;</span>
+                        <div class="titleBox">The Set | 66%</div>
+                        <div class="titleBoxtime">02:36</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="http://img13.deviantart.net/035f/i/2011/099/3/a/cinematogprahy_one_hd_wp_by_inflight-d3dl5za.jpg" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">The Town Is On Fire | 71%</div>
+                        <div class="titleBoxtime">06:21</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="https://moeatthemovies.files.wordpress.com/2012/08/wpid-photo-aug-21-2012-741-pm1.jpg" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">Grains | 81%</div>
+                        <div class="titleBoxtime">10:12</div>
+                      </a>
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="http://i.imgur.com/DeaRsd4.png" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">The Shuttle | 68%</div>
+                        <div class="titleBoxtime">07:13</div>
+                      </a>
+                      </div>
+                      </div>
+                    </div>
+
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="https://fuwadabrar.files.wordpress.com/2014/11/interstellar-movie-2014-hd-wallpapers-full.jpg" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">Travel Into Time | 83%</div>
+                        <div class="titleBoxtime">03:44</div>
+                      </a>
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="http://alexkittle.com/wp-content/uploads/2011/07/tumblr_mt70k6alPd1rr3hvpo1_1280.jpg" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">Ms. Marry | 59%</div>
+                        <div class="titleBoxtime">11:21</div>
+                      </a>
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="http://i.imgur.com/4Eoih73.png" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">Check The Time | 77%</div>
+                        <div class="titleBoxtime">05:45</div>
+                      </a>
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="http://i.imgur.com/NpArP3k.png" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">Sicario | 93%</div>
+                        <div class="titleBoxtime">16:43</div>
+                      </a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /#wrap -->
+
+
+                  <h1 style="
+    margin-left: 52px;
+    color: #fff;
+">Professor's Top Picks</h1>
+                          <!-- Enable responsive view on mobile devices -->
+                        <body class="no-touch">
+                          <div class="wrap">
+                            <!-- Define all of the tiles: -->
+                            <div class="box">
+                              <div class="boxInner">
+                                <img src="http://www.wallpapersxl.com/wallpapers/1920x1080/i-saw-the-devil/939086/i-saw-the-devil-movies-with-beautiful-cinematography-page-neogaf-939086.jpg" />
+                                <div class="playhover">
+                                  <a href="#">
+                                    <span class="play">&#9658;</span>
+                                <div class="titleBox">Torn | 66%</div>
+                                <div class="titleBoxtime">04:35</div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="box">
+                              <div class="boxInner">
+                                <img src="http://www.independ.net/wp-content/uploads/2012/12/Maiyet_NOWNESS_1920x1080.jpg" />
+                                <div class="playhover">
+                                  <a href="#">
+                                  <span class="play">&#9658;</span>
+                                <div class="titleBox">Against The District | 71%</div>
+                                <div class="titleBoxtime">13:43</div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="box">
+                              <div class="boxInner">
+                                <img src="https://quotily.files.wordpress.com/2013/05/stalk21.jpg" />
+                                <div class="playhover">
+                                  <a href="#">
+                                  <span class="play">&#9658;</span>
+                                <div class="titleBox">Stay Out Of Sewell | 81%</div>
+                                <div class="titleBoxtime">06:24</div>
+                              </a>
+                              </div>
+                              </div>
+                            </div>
+
+                            <div class="box">
+                              <div class="boxInner">
+                                <img src="http://content.provideocoalition.com/uploads/Marko/LightingSeries/john-dies-at-the-end-blu-ray-screenshot-0051066-I-1920.jpg" />
+                                <div class="playhover">
+                                  <a href="#">
+                                  <span class="play">&#9658;</span>
+                                <div class="titleBox">Walls | 68%</div>
+                                <div class="titleBoxtime">09:59</div>
+                              </a>
+                              </div>
+                              </div>
+                            </div>
+
+
+                            <div class="box">
+                              <div class="boxInner">
+                                <img src="http://www.independ.net/wp-content/uploads/2012/12/Maiyet_NOWNESS_1920x1080.jpg" />
+                                <div class="playhover">
+                                  <a href="#">
+                                  <span class="play">&#9658;</span>
+                                <div class="titleBox">Lost Today | 83%</div>
+                                <div class="titleBoxtime">07:43</div>
+                              </a>
+                              </div>
+                              </div>
+                            </div>
+
+                            <div class="box">
+                              <div class="boxInner">
+                                <img src="https://thecinephiliac.files.wordpress.com/2013/12/inside-llewyn-davis-whysoblu-2.jpg" />
+                                <div class="playhover">
+                                  <a href="#">
+                                  <span class="play">&#9658;</span>
+                                <div class="titleBox">Nylon | 59%</div>
+                                <div class="titleBoxtime">09:02</div>
+                              </a>
+                              </div>
+                              </div>
+                            </div>
+
+                            <div class="box">
+                              <div class="boxInner">
+                                <img src="http://3.bp.blogspot.com/-NfHz-hWhbJ4/UHb4zrEsz5I/AAAAAAAABS4/HcUxE8k5ngE/s1600/583992016.jpg" />
+                                <div class="playhover">
+                                  <a href="#">
+                                  <span class="play">&#9658;</span>
+                                <div class="titleBox">The Shed | 77%</div>
+                                <div class="titleBoxtime">07:04</div>
+                              </a>
+                              </div>
+                              </div>
+                            </div>
+
+                            <div class="box">
+                              <div class="boxInner">
+                                <img src="http://whiggles.landofwhimsy.com/hdcaptures/domino2.jpg" />
+                                <div class="playhover">
+                                  <a href="#">
+                                  <span class="play">&#9658;</span>
+                                <div class="titleBox">10-4 | 93%</div>
+                                <div class="titleBoxtime">05:01</div>
+
+
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h1 style="
+    margin-left: 52px;
+    color: #fff;
+">Student's Top Picks </h1>
+                  <!-- Enable responsive view on mobile devices -->
+                <body class="no-touch">
+                  <div class="wrap">
+                    <!-- Define all of the tiles: -->
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="http://www.independ.net/wp-content/uploads/2012/12/Maiyet_NOWNESS_1920x1080.jpg" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">Against The District | 71%</div>
+                        <div class="titleBoxtime">13:43</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="http://www.wallpapersxl.com/wallpapers/1920x1080/i-saw-the-devil/939086/i-saw-the-devil-movies-with-beautiful-cinematography-page-neogaf-939086.jpg" />
+                        <div class="playhover">
+                          <a href="#">
+                            <span class="play">&#9658;</span>
+                        <div class="titleBox">Torn | 66%</div>
+                        <div class="titleBoxtime">04:35</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="http://content.provideocoalition.com/uploads/Marko/LightingSeries/john-dies-at-the-end-blu-ray-screenshot-0051066-I-1920.jpg" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">Walls | 68%</div>
+                        <div class="titleBoxtime">09:59</div>
+                      </a>
+                      </div>
+                      </div>
+                    </div>
+
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="https://quotily.files.wordpress.com/2013/05/stalk21.jpg" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">Stay Out Of Sewell | 81%</div>
+                        <div class="titleBoxtime">06:24</div>
+                      </a>
+                      </div>
+                      </div>
+                    </div>
+
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="https://thecinephiliac.files.wordpress.com/2013/12/inside-llewyn-davis-whysoblu-2.jpg" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">Nylon | 59%</div>
+                        <div class="titleBoxtime">09:02</div>
+                      </a>
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="http://www.independ.net/wp-content/uploads/2012/12/Maiyet_NOWNESS_1920x1080.jpg" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">Lost Today | 83%</div>
+                        <div class="titleBoxtime">07:43</div>
+                      </a>
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="http://3.bp.blogspot.com/-NfHz-hWhbJ4/UHb4zrEsz5I/AAAAAAAABS4/HcUxE8k5ngE/s1600/583992016.jpg" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">The Shed | 77%</div>
+                        <div class="titleBoxtime">07:04</div>
+                      </a>
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div class="boxInner">
+                        <img src="http://whiggles.landofwhimsy.com/hdcaptures/domino2.jpg" />
+                        <div class="playhover">
+                          <a href="#">
+                          <span class="play">&#9658;</span>
+                        <div class="titleBox">10-4 | 93%</div>
+                        <div class="titleBoxtime">05:01</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footercol"</div>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+    $(function(){
+      $("#footer").load("footer.html");
+    });
+    </script>
+    <div id="footer"></div>
+    <!--Remaining section-->
+  </footer>
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
