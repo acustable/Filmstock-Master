@@ -40,17 +40,13 @@
   .upload-video-profile {
     float: left;
     display: block;
-    margin-right: 89px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 2px;
+    border-radius: 5px;
     width: 20%;
     background-color: rgba(26, 187, 156, 0.69);
     color: #fff;
     font-weight: 600;
     line-height: 37px;
-    margin-top: 10px;
-    -webkit-transition: background-color 1280ms;
+    margin-top: 24px;
     transition: background-color 1280ms;
     }
     .upload-video-profile:hover {
@@ -491,6 +487,7 @@
 
 body {
     color: #43474f;
+    background-color: rgb(67, 71, 79);
     font-family: 'Titillium Web', sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -621,6 +618,14 @@ table.no-margin .progress {
     border-radius: 2px;
     background-color: rgba(38, 42, 51, 0.86);
 }
+.videocol {
+    position: absolute;
+    width: 100%;
+    margin-left: 16%;
+    margin-top: 28px;
+    border-radius: 2px;
+    background-color: rgb(25, 25, 25);
+}
 .profilecol {
   position: absolute;
   width: 85%;
@@ -635,11 +640,10 @@ table.no-margin .progress {
   background-color: rgba(38, 42, 51, 0.86);
 }
 .footercol {
-  position: absolute;
   width: 101%;
-  margin-top: 53%;
-  margin-left: -21px;
+  position: absolute;
   padding-bottom: 28px;
+  margin-top: 1452px;
   border-radius: 2px;
   background-color: rgba(38, 42, 51, 0.86);
 }
@@ -660,6 +664,7 @@ h3,
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 28px;
+  color: #fff;
 }
 
 a {
@@ -881,6 +886,17 @@ a:focus {
     margin: 0;
     padding-left: 10px
 }
+.section-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 28px;
+  color: #fff;
+  float: left;
+  margin-left: 52px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
 
 .site_title:hover,
 .site_title:focus {
@@ -934,7 +950,7 @@ a:focus {
 .toggle {
     float: left;
     margin: 0;
-    padding-top: 16px;
+    padding-top: 0px;
     width: 70px
 }
 
@@ -986,15 +1002,6 @@ a:focus {
     display: block;
     padding: 4px 6px
 }
-
-footer {
-    background: rgb(38, 42, 51);
-    padding: 0px 20px;
-    display: block;
-    margin-top: 53%;
-
-}
-
 .nav-sm footer {
     margin-left: 133px;
 }
@@ -1005,7 +1012,12 @@ footer {
     bottom: 0px;
     width: 100%
 }
-
+footer {
+  display: flex;
+  width: 100%;
+  position: static;
+  margin-top: 9%;
+}
 @media (min-width: 768px) {
     .footer_fixed footer {
         margin-left: 0
@@ -1679,8 +1691,8 @@ table.display tr.odd.row_selected td {
 div.box {
   height: 157px;
   width: 265px;
-  margin-bottom: 24px;
-  padding: 10px;
+  margin-bottom: 3vw;
+  padding: 3px;
   overflow: hidden;
 }
 
@@ -5674,6 +5686,37 @@ ul.notifications {
   transition: all 0.35s 0.2s ease-in;
 
 }
+.play-btn {
+  cursor: pointer;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #1d8e7b;
+  stroke-width: 2;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -moz-transform: rotate(-89deg) translateX(-190px);
+  stroke-dashoffset: 0;
+}
+
+.arrow {
+  fill: #1d8e7b;
+}
+
+.play-btn:hover .outer {
+  stroke-dashoffset: 0 !important;
+  animation: fillcircle 1.5s;
+}
+
+@-webkit-keyframes fillcircle {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 
 /*This is for Video Background*/
 * {
@@ -5689,7 +5732,7 @@ ul.notifications {
   box-sizing: inherit;
 }
 
-#video-viewport {
+.video-viewport {
   position: fixed;
   top: 0;
   left: 0;
@@ -5698,7 +5741,7 @@ ul.notifications {
   overflow: hidden;
   z-index: -1;
 }
-video {
+.video-main {
     opacity: 0.2;
     position: fixed;
     top: 50%;

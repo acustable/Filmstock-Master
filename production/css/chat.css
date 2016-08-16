@@ -129,6 +129,7 @@ p { margin: 0; }
 .chat {
 	background: rgba(38, 42, 51, 0.86);
 	z-index: 10;
+	display: none;
 }
 
 .chat-history {
