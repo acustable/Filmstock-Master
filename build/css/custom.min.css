@@ -618,6 +618,16 @@ table.no-margin .progress {
     border-radius: 2px;
     background-color: rgba(38, 42, 51, 0.86);
 }
+.commentscol {
+  position: absolute;
+  margin-top: 710px;
+  top: 40%;
+  left: 33.7%;
+  transform: translate(-50%,-50%);
+  width: 39vw;
+  float: left;
+  background-color: rgba(38, 42, 51, 0.86);
+}
 .videocol {
     position: absolute;
     width: 100%;
