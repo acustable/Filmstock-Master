@@ -23,6 +23,8 @@ svg {
   -ms-user-select: none;
   user-select: none;
   cursor: all-scroll;
+  overflow: hidden;
+  min-height: 450px;
 }
 .slider-control.inactive:hover {
   cursor: auto;

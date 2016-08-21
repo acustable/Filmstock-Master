@@ -139,7 +139,7 @@ $(function(){
         animating = false,
         animTime = 500,
         autoSlideTimeout,
-        autoSlideDelay = 6000,
+        autoSlideDelay = 15000,
         $pagination = $(".slider-pagi");
 
     function createBullets() {
@@ -261,11 +261,36 @@ $(function(){
 
           <!-- categories Sections -->
           <div class="row">
-                <div class="maincol">
-                  <h1 style="position: static;margin-left: 47px;margin-bottom: 30px;">Trending Now</h1>
+            <style scoped>
+              .flexbox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /*background-color: rgb(67, 71, 79) !important;*/
+              }
+              .videoListContainer {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 1200px;
+                background-color: rgba(38, 42, 51, 0.86);
+                margin: 0;
+              }
+              .flexRow {
+                flex: 1 0 100%;
+                max-width: 100%;
+                margin: 0;
+                padding: 20px 70px;
+              }
+              div .box {
+                margin-bottom: 0;
+              }
+
+            </style>
+              <div class='flexbox maincol'>
+                <div class="videoListContainer">
+                  <h1 class="flexRow" style="position: static; padding-top: 40px";>Trending Now</h1>
                   <!-- Enable responsive view on mobile devices -->
-                <body class="no-touch">
-                  <div class="wrap">
+                  <div class="wrap flexRow">
                     <!-- Define all of the tiles: -->
                     <div class="box">
                       <div class="boxInner">
@@ -375,10 +400,9 @@ $(function(){
                   <!-- /#wrap -->
 
 
-                  <h1 style="position: static;margin-left: 47px;margin-bottom: 30px;">Professor's Top Picks</h1>
+                  <h1 class="flexRow" style="position: static;">Professor's Top Picks</h1>
                           <!-- Enable responsive view on mobile devices -->
-                        <body class="no-touch">
-                          <div class="wrap">
+                          <div class="wrap flexRow">
                             <!-- Define all of the tiles: -->
                             <div class="box">
                               <div class="boxInner">
@@ -486,10 +510,9 @@ $(function(){
             </div>
           </div>
 
-            <h1 style="position: static;margin-left: 47px;margin-bottom: 30px;">Student's Top Picks</h1>
+            <h1 class="flexRow" style="position: static;">Student's Top Picks</h1>
                   <!-- Enable responsive view on mobile devices -->
-                <body class="no-touch">
-                  <div class="wrap">
+                  <div class="wrap flexRow">
                     <!-- Define all of the tiles: -->
 
                     <div class="box">
@@ -598,6 +621,7 @@ $(function(){
         </div>
       </div>
     </div>
+  </div>
   </div>
 
 

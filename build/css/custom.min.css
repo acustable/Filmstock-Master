@@ -616,7 +616,7 @@ table.no-margin .progress {
     padding-bottom: 28px;
     padding-left: 10px;
     border-radius: 2px;
-    background-color: rgba(38, 42, 51, 0.86);
+    /*background-color: rgba(38, 42, 51, 0.86);*/
 }
 .commentscol {
   position: absolute;
