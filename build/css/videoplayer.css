@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
 article.video {
-  position: absolute;
-  width: 67%;
+  position: static;
+  width: 100%;
   border-radius: 2px;
   background-color: #191919;
   overflow: hidden;
