@@ -291,7 +291,7 @@
 
 .nav_menu {
     float: left;
-    background: rgb(38, 42, 51);
+    background: rgb(5, 9, 25);
     margin-bottom: 10px;
     width: 100%;
     position: relative
@@ -3723,7 +3723,7 @@ ul.project_files li a i {
 
 .avatar img {
     border-radius: 50%;
-    max-width: 45px
+    max-width: 80px
 }
 
 .pricing {
