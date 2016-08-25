@@ -1,5 +1,27 @@
 <!DOCTYPE html>
+<!-- Header -->
+<head>
+<title>My Profile</title>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(function(){
+  $("#header").load("header.html");
+});
+</script>
 
+<style>}
+.footervp {
+  margin-top: 17% !important;
+}
+body {
+  color: #43474f;
+background-color: rgb(0, 0, 0) !important;
+}</style>
+
+
+
+</head>
+<div id="header"></div>
 <!-- Header -->
 <head>
   <title>Video Page</title>
@@ -7,9 +29,11 @@
       <meta charset="UTF-8">
       <link href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/videopage.css">
       <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
       <link href="../css/custom.min.css" rel="stylesheet">
+      <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+      <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -23,17 +47,18 @@
         </section>
 
         <section class="details">
-          <header class="details-header">
-            <h1 style="text-align: -webkit-left;color: #b5b5b5;margin-left: 52px;font-size:60px;">Living Love</h1>
+          <header class="details-header" style="padding: 4px;padding-left: 75px;">
+            <h1 style="text-align: -webkit-left;color: #b5b5b5;margin-left: 52px;font-size:40px;">Living Love</h1>
 
             <div class="channel-info">
               <img src="../production/images/cameron.jpg" width="100px" alt="ChannelName" style="margin-left: 52px;border-radius: 50px;">
               <p class="slide_text-directedby" style="margin-left: 51px;font-size: 24px;color: #fff;">Directed By: <a class="slide_text-director" style="color: #1b967e;">Cameron Bishop</a></p>
             </header>
 
-            <div class="details-description">
-              <h2 style="text-align: -webkit-left;color: #b5b5b5;margin-left:52px;">Published on Nov 24, 2015</h2>
-              <p style="color: #fff;margin-left:52px;padding-bottom:50px;width:600px;font-size:18px;">In the aftermath of the 1992 L.A. riots, something truly remarkable happened at the intersection of 41st Street and Alameda Avenue thanks to an uncharacteristically charitable move by the city government. </p>
+            <div class="details-description" style="padding: 10px;padding-top: 18px;padding-left: 75px;">
+              <h2 style="text-align: -webkit-left;color: #b5b5b5;margin-left:52px;">Summary</h2>
+              <p style="color: #fff;margin-left:52px;padding-bottom:18px;width:600px;font-size:18px;">In the aftermath of the 1992 L.A. riots, something truly remarkable happened at the intersection of 41st Street and Alameda Avenue thanks to an uncharacteristically charitable move by the city government. </p>
+              <h2 style="text-align: -webkit-left;color: #b5b5b5;margin-left:52px;font-size:13px;">Published on Nov 24, 2015</h2>
             </div>
 
             <div class="details-comments">
@@ -46,7 +71,7 @@
 				</div>
 				<div class="comment-block">
 						<form action="">
-								<textarea name="" id="" cols="30" rows="3" placeholder="Add comment..."></textarea>
+								<textarea name="" id="" cols="30" rows="3" placeholder="Add comment..." style="background-color: #43474f;"></textarea>
                 <ul class="comment-actions">
 										<li class="reply">Submit</li>
 								</ul>
@@ -163,3 +188,16 @@
 
       </body>
       </html>
+
+
+      <footervp>
+        <div class="footercolpp"</div>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $(function(){
+          $("#footer").load("footer.html");
+        });
+        </script>
+        <div id="footer"></div>
+        <!--Remaining section-->
+      </footervp>
