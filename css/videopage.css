@@ -86,7 +86,6 @@ textarea {
 .content-wrap {
   padding: calc(3.7692em + 480px) 0 0.01em;
   overflow: auto;
-  background: rgb(0, 0, 0);
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -136,7 +135,6 @@ textarea {
   float: left;
   width: calc(100% - 430px);
   padding: 3.7692em 0.7692em 0;
-  background: rgb(0, 0, 0);
 }
 
 .details > * {

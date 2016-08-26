@@ -24,7 +24,7 @@ svg {
   user-select: none;
   cursor: all-scroll;
   overflow: hidden;
-  min-height: 450px;
+  min-height: 550px;
 }
 .slider-control.inactive:hover {
   cursor: auto;
@@ -133,7 +133,8 @@ svg {
 }
 .slide:nth-child(1) .slide__bg {
   left: 0;
-  background-image: url("/production/images/livinglove.jpg");
+  background-image: url("/production/images/moonlit.png");
+  background-size: cover;
 }
 .slide:nth-child(1) .slide__overlay-path {
   fill: rgba(4, 7, 12, 0.72);
@@ -244,10 +245,12 @@ svg {
 }
 .slide__text-heading {
   color: rgba(205, 205, 205, 0.87);
-  font-size: 40px;
-  font-weight:400;
-  padding-left: 0px;
-  text-transform: uppercase;
+font-size: 42px;
+font-weight: 400;
+margin-bottom: -40px;
+padding-left: 0px;
+text-transform: uppercase;
+width: 1045px;
 }
 .slide_text-directedby {
   font-size: 14px;

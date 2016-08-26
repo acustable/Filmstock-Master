@@ -503,11 +503,12 @@ body {
   font-family: 'Titillium Web', sans-serif;
   font-size: 13px;
   font-weight: 400;
-  line-height: 1.471
+  line-height: 1.471;
   -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
   zoom: 0.8; /* Other non-webkit browsers */
   zoom: 90%; /* Webkit browsers */
-}
+  background-image: url(/production/images/basicbackground.jpg);
+  background-size: 3800px;
 }
 
 .main_container .top_nav {
@@ -689,7 +690,15 @@ table.no-margin .progress {
   width: 100%;
   position: absolute;
   padding-bottom: 0px;
-  margin-top: 143px;
+  margin-top: 1249px;
+  border-radius: 2px;
+  background-color: rgba(38, 42, 51, 0.86);
+}
+.footercolvp {
+  width: 100%;
+  position: absolute;
+  padding-bottom: 0px;
+  margin-top: 100px;
   border-radius: 2px;
   background-color: rgba(38, 42, 51, 0.86);
 }
@@ -5867,6 +5876,7 @@ ul.notifications {
 }
 .boxInner img {
   width: 100%;
+  height: 100%;
 }
 .box_directedby {
   color: rgba(26, 187, 156, 0.69);
@@ -5876,15 +5886,16 @@ ul.notifications {
   bottom: 0;
   left: 0;
   right: 0;
-  margin-bottom: 100px;
+  margin-bottom: 96px;
   background: #000;
-  background: rgba(38, 42, 51, 0.9);
+  background: rgba(62, 62, 62, 0.93);
   color: rgba(255, 255, 255, 0.77);
   padding: 11px;
   padding: 9px;
-  padding-top: 116px;
+  padding-top: 112px;
   text-align: center;
-  font-size: small;
+  font-size: 16px;
+  font-weight: normal;
   -webkit-transition: all 0.6s ease-out;
   -moz-transition: all 0.6s ease-out;
   -o-transition: all 0.6s ease-out;
@@ -5907,26 +5918,27 @@ ul.notifications {
 }
 .titleBoxtime {
   position: absolute;
-  bottom: 69px;
-  left: 206px;
-  top: -64px;
-  right: 0px;
-  margin-right: -1px;
-  margin-bottom: -3px;
-  margin-top: 107px;
-  color: rgba(255, 255, 255, 0.77);
-  background: rgba(123, 123, 123, 0.8);
-  border-radius: 2px;
-  padding: 3px;
-  padding-top: 5px;
-  padding-left: 0px;
-  padding-right: 0px;
-  text-align: center;
-  font-size: small;
-  -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -o-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out;
+    bottom: 40px;
+    left: 206px;
+    top: -61px;
+    right: 0px;
+    margin-right: 0px;
+    margin-bottom: -3px;
+    margin-top: 129px;
+    margin-left: -8px;
+    color: rgba(255, 255, 255, 0.77);
+    background: rgba(123, 123, 123, 0.8);
+    border-radius: 2px;
+    padding: 3px;
+    padding-top: 8px;
+    padding-left: 2px;
+    padding-right: 0px;
+    text-align: center;
+    font-size: small;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
 }
 .titleBoxtimerelated {
   position: absolute;
@@ -5970,7 +5982,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 .playhover a .play,
 .playhover a .overlay {
-  opacity: 0;
+  opacity: 100%;
   padding-top: 20px;
 }
 
