@@ -506,7 +506,7 @@ body {
   line-height: 1.471;
   -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
   zoom: 0.8; /* Other non-webkit browsers */
-  zoom: 90%; /* Webkit browsers */
+  zoom: 78%; /* Webkit browsers */
   background-image: url(/production/images/basicbackground.jpg);
   background-size: 3800px;
 }
@@ -685,6 +685,7 @@ table.no-margin .progress {
   margin-top: 1595px;
   border-radius: 2px;
   background-color: rgba(38, 42, 51, 0.86);
+  z-index: 100000;
 }
 .footercolpp {
   width: 100%;
@@ -693,6 +694,7 @@ table.no-margin .progress {
   margin-top: 1249px;
   border-radius: 2px;
   background-color: rgba(38, 42, 51, 0.86);
+  z-index: 100000;
 }
 .footercolvp {
   width: 100%;
@@ -701,6 +703,7 @@ table.no-margin .progress {
   margin-top: 100px;
   border-radius: 2px;
   background-color: rgba(38, 42, 51, 0.86);
+  z-index: 10000;
 }
 .row {
   margin-right: -10px;
@@ -1776,11 +1779,10 @@ ul.msg_list li a {
 }
 
 ul.msg_list li a .image img {
-  border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 50%;
   float: left;
-  margin-right: 10px;
-  width: 11%
+  margin-right: 17px;
+  width: 14%
 }
 
 ul.msg_list li a .time {
@@ -1831,7 +1833,7 @@ ul.msg_list li a .message {
   margin-top: -20px;
   border: 0px solid #616161;
   -webkit-box-shadow: none;
-  right: 204px;
+  right: 225px;
   left: auto;
   width: 168.3px;
 }
@@ -1841,10 +1843,10 @@ ul.msg_list li a .message {
 }
 
 .info-number .badge {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: normal;
   line-height: 13px;
-  padding: 4px 4px 2px 5px;
+  border-radius: 84px;
   position: absolute;
   right: 29px;
   top: -1px;
@@ -5752,6 +5754,7 @@ ul.notifications {
 }
 .play-btn {
   cursor: pointer;
+  margin-top: 30px;
 }
 
 .outer {
@@ -6334,7 +6337,7 @@ dl {
 .tabPanel-widget > h2 {
   font-size: 20px;
   font-weight: bold;
-  width: 181px;
+  width: 183px;
   height: 52px;
   line-height: 33px;
 }

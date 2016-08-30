@@ -12,16 +12,15 @@ fieldset {
 }
 
 hr {
-	background: #929292;
-	border: 0;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	min-height: 2px;
-	z-index: 10;
-	margin-top: -14px !important;
-	margin-bottom: 20px !important;
-	border: 0;
-	border-top: 1px solid #eee !important;
+	background: rgba(146, 146, 146, 0.25);
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    min-height: 0px;
+    z-index: 10;
+    margin-top: 3px !important;
+    margin-bottom: 14px !important;
+    border: 0;
+    border-top: 3px solid rgba(80, 80, 80, 0) !important;
 }
 
 input {
@@ -52,7 +51,7 @@ p { margin: 0; }
 	right: 24px;
 	position: fixed;
 	width: 300px;
-	z-index: 10;
+	z-index: 1000000;
 }
 
 #live-chat header {
@@ -85,6 +84,7 @@ p { margin: 0; }
 
 #live-chat form {
 	padding: 24px;
+	background-color: #111420;
 }
 
 #live-chat input[type="text"] {
@@ -100,19 +100,20 @@ p { margin: 0; }
 
 .chat-message-counter {
 	background: #1ABB9C;
-	border-radius: 50%;
-	display: none;
-	font-size: 12px;
-	font-weight: bold;
-	height: 28px;
-	left: 0;
-	line-height: 28px;
-	margin: -15px 0 0 -15px;
-	position: absolute;
-	text-align: center;
-	top: 0;
-	width: 28px;
-	z-index: 10;
+    border-radius: 210%;
+    display: none;
+    font-size: 14px;
+    font-weight: bold;
+    height: 27px;
+    left: 0;
+    line-height: 28px;
+    margin: -15px 0 0 -15px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 28px;
+    z-index: 10;
+    visibility: visible;
 }
 
 .chat-close {
@@ -141,7 +142,7 @@ p { margin: 0; }
 	padding: 8px 24px;
 	overflow-y: scroll;
 	z-index: 10;
-	background-color: #fff;
+	background-color: rgba(56, 56, 56, 0.32);
 	color: black;
 	border-style: solid;
 	border-width: 2px;
@@ -168,6 +169,7 @@ p { margin: 0; }
 	float: right;
 	font-size: 10px;
 	z-index: 10;
+	color: #1d8e7b;
 }
 
 .chat-feedback {
@@ -175,6 +177,6 @@ p { margin: 0; }
 	z-index: 10;
 	font-size: 12px;
 	padding-top: 13px;
-	color: #fff;
+	color: rgba(212, 212, 212, 0.42);
 	font-weight: initial;
 }

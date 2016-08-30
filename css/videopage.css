@@ -90,7 +90,7 @@ textarea {
   transition: 300ms;
 }
 
-.content-wrap.PiP { padding: calc(4.25em + 236px) 0 0.01em; }
+.content-wrap.PiP { padding: calc(-10.75em + 236px) 0 0.01em; }
 
 
 /* Video */
@@ -105,8 +105,8 @@ textarea {
   overflow: visible;
   text-align: center;
   background: #000;
-  -webkit-transition: 300ms;
-  transition: 300ms;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
 }
 
 .PiP .video {

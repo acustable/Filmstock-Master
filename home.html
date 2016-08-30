@@ -15,7 +15,7 @@ $(function(){
 
 <html lang="en">
 </section>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link rel="stylesheet" href="/css/chat.css">
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
@@ -27,7 +27,61 @@ $(function(){
 
 
 
-  <!-- Filmstock of the week slider -->
+  <!--Chat -->
+
+
+  <div id="live-chat">
+		<header class="clearfix">
+			<h4>Tony Custable</h4>
+			<span class="chat-message-counter">3</span>
+		</header>
+		<div class="chat">
+			<div class="chat-history">
+        <hr>
+				<div class="chat-message clearfix">
+					<img src="/production/images/img.jpg" alt="" width="32" height="32">
+					<div class="chat-message-content clearfix">
+						<span class="chat-time">13:35</span>
+						<h5 style="font-size: 15px;margin-top: 8px;color: #1d8e7b;">Tony Custable</h5>
+						<p style="font-size: 13px;color: #fff;font-weight: normal;">Have you looked into Davinci Color Grading software?</p>
+					</div> <!-- end chat-message-content -->
+				</div> <!-- end chat-message -->
+				<hr>
+				<div class="chat-message clearfix">
+					<img src="/production/images/alexpic.jpg" alt="" width="32" height="32">
+					<div class="chat-message-content clearfix">
+						<span class="chat-time">13:37</span>
+						<h5 style="font-size: 15px;margin-top: 8px;color: #1d8e7b;">Alex Michael Kennedy</h5>
+						<p style="font-size: 13px;color: #fff;font-weight: normal;">No, but I hear its nice. I am using Adobe Speed Grade. Should I switch?</p>
+					</div> <!-- end chat-message-content -->
+				</div> <!-- end chat-message -->
+				<hr>
+				<div class="chat-message clearfix">
+					<img src="/production/images/img.jpg" alt="" width="32" height="32">
+					<div class="chat-message-content clearfix">
+						<span class="chat-time">13:38</span>
+						<h5 style="font-size: 15px;margin-top: 8px;color: #1d8e7b;">Tony Custable</h5>
+						<p style="font-size: 13px;color: #fff;font-weight: normal;">Honestly, maybe.</p>
+					</div> <!-- end chat-message-content -->
+				</div> <!-- end chat-message -->
+				<hr>
+			</div> <!-- end chat-history -->
+			<p class="chat-feedback">Your partner is typing…</p>
+			<form action="#" method="post">
+				<fieldset>
+					<input type="text" placeholder="Type your message…" autofocus>
+					<input type="hidden">
+				</fieldset>
+			</form>
+		</div> <!-- end chat -->
+	</div> <!-- end live-chat -->
+
+<!-- Filmstock of the week slider -->
+
+</body>
+</html>
+
+<script src="/production/js/chat.js"></script>
   <html>
       <link rel="stylesheet" href="/css/slider.css">
 
@@ -294,7 +348,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                             <span class="play">&#9658;</span>
-                        <div class="titleBox">The Set &nbsp| &nbsp<font color="#FF9800">66 %</font></div>
+                        <div class="titleBox">The Set</div>
                         <div class="titleBoxtime">02:36</div>
                           </a>
                         </div>
@@ -307,7 +361,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">Town's Fire &nbsp| &nbsp<font color="#0fa964">71%</font></div>
+                        <div class="titleBox">Town's Fire</div>
                         <div class="titleBoxtime">06:21</div>
                           </a>
                         </div>
@@ -320,7 +374,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">Moonlit &nbsp| &nbsp<font color="#0fa964">99%</font></div>
+                        <div class="titleBox">Moonlit</div>
                         <div class="titleBoxtime">07:34</div>
                       </a>
                       </div>
@@ -333,7 +387,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">The Shuttle &nbsp| &nbsp<font color="#FF9800">61%</font></div>
+                        <div class="titleBox">The Shuttle</div>
                         <div class="titleBoxtime">07:13</div>
                       </a>
                       </div>
@@ -347,7 +401,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">10-4 &nbsp| &nbsp<font color="#0fa964">81%</font></div>
+                        <div class="titleBox">10-4</div>
                         <div class="titleBoxtime">03:44</div>
                       </a>
                       </div>
@@ -360,7 +414,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">Travel In Space &nbsp| &nbsp<font color="#FF9800">59%</font></div>
+                        <div class="titleBox">Travel In Space</div>
                         <div class="titleBoxtime">11:21</div>
                       </a>
                       </div>
@@ -373,7 +427,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">Ms. Marry &nbsp| &nbsp<font color="#0fa964">77%</font></div>
+                        <div class="titleBox">Ms. Marry</div>
                         <div class="titleBoxtime">05:45</div>
                       </a>
                       </div>
@@ -386,7 +440,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">Time Check &nbsp| &nbsp<font color="#0fa964">93%</font></div>
+                        <div class="titleBox">Time Check</div>
                         <div class="titleBoxtime">16:43</div>
                       </a>
                       </div>
@@ -406,7 +460,7 @@ $(function(){
                                 <div class="playhover">
                                   <a href="/videopage.html">
                                     <span class="play">&#9658;</span>
-                                <div class="titleBox">Sicario &nbsp| &nbsp<font color="#FF9800">66%</font></div>
+                                <div class="titleBox">Sicario</div>
                                 <div class="titleBoxtime">04:35</div>
                                   </a>
                                 </div>
@@ -419,7 +473,7 @@ $(function(){
                                 <div class="playhover">
                                   <a href="/videopage.html">
                                   <span class="play">&#9658;</span>
-                                <div class="titleBox">Thorn &nbsp| &nbsp<font color="#0fa964">71%</font></div>
+                                <div class="titleBox">Thorn</div>
                                 <div class="titleBoxtime">13:43</div>
                                   </a>
                                 </div>
@@ -432,7 +486,7 @@ $(function(){
                                 <div class="playhover">
                                   <a href="/videopage.html">
                                   <span class="play">&#9658;</span>
-                                <div class="titleBox">District Revenge &nbsp| &nbsp<font color="#0fa964">84%</font></div>
+                                <div class="titleBox">District Revenge</div>
                                 <div class="titleBoxtime">06:24</div>
                               </a>
                               </div>
@@ -445,7 +499,7 @@ $(function(){
                                 <div class="playhover">
                                   <a href="/videopage.html">
                                   <span class="play">&#9658;</span>
-                                <div class="titleBox">Stay Out &nbsp| &nbsp<font color="#FF9800">68%</font></div>
+                                <div class="titleBox">Stay Out</div>
                                 <div class="titleBoxtime">09:59</div>
                               </a>
                               </div>
@@ -459,7 +513,7 @@ $(function(){
                                 <div class="playhover">
                                   <a href="/videopage.html">
                                   <span class="play">&#9658;</span>
-                                <div class="titleBox">Walls &nbsp| &nbsp<font color="#0fa964">83%</font></div>
+                                <div class="titleBox">Walls</div>
                                 <div class="titleBoxtime">07:43</div>
                               </a>
                               </div>
@@ -472,7 +526,7 @@ $(function(){
                                 <div class="playhover">
                                   <a href="/videopage.html">
                                   <span class="play">&#9658;</span>
-                                <div class="titleBox">Lost Today &nbsp| &nbsp<font color="#FF9800">59%</font></div>
+                                <div class="titleBox">Lost Today</div>
                                 <div class="titleBoxtime">09:02</div>
                               </a>
                               </div>
@@ -485,7 +539,7 @@ $(function(){
                                 <div class="playhover">
                                   <a href="/videopage.html">
                                   <span class="play">&#9658;</span>
-                                <div class="titleBox">Nylon &nbsp| &nbsp<font color="#0fa964">77%</font></div>
+                                <div class="titleBox">Nylon</div>
                                 <div class="titleBoxtime">07:04</div>
                               </a>
                               </div>
@@ -498,7 +552,7 @@ $(function(){
                                 <div class="playhover">
                                   <a href="/videopage.html">
                                   <span class="play">&#9658;</span>
-                                <div class="titleBox">Shed &nbsp| &nbsp<font color="#0fa964">93%</font></div>
+                                <div class="titleBox">Shed</div>
                                 <div class="titleBoxtime">05:01</div>
                   </a>
                 </div>
@@ -518,7 +572,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">Stay Out &nbsp| &nbsp<font color="#FF9800">68%</font></div>
+                        <div class="titleBox">Stay Out</div>
                         <div class="titleBoxtime">09:59</div>
                       </a>
                       </div>
@@ -531,7 +585,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">Thorn &nbsp| &nbsp<font color="#0fa964">71%</font></div>
+                        <div class="titleBox">Thorn</div>
                         <div class="titleBoxtime">13:43</div>
                           </a>
                         </div>
@@ -544,7 +598,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">District Revenge &nbsp| &nbsp<font color="#0fa964">84%</font></div>
+                        <div class="titleBox">District Revenge</div>
                         <div class="titleBoxtime">06:24</div>
                       </a>
                       </div>
@@ -557,7 +611,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">Shed &nbsp| &nbsp<font color="#0fa964">93%</font></div>
+                        <div class="titleBox">Shed</div>
                         <div class="titleBoxtime">05:01</div>
                       </a>
                       </div>
@@ -570,7 +624,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">10-4 &nbsp| &nbsp<font color="#0fa964">81%</font></div>
+                        <div class="titleBox">10-4</div>
                         <div class="titleBoxtime">03:44</div>
                       </a>
                       </div>
@@ -583,7 +637,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">Travel In Space &nbsp| &nbsp<font color="#FF9800">59%</font></div>
+                        <div class="titleBox">Travel In Space</div>
                         <div class="titleBoxtime">11:21</div>
                       </a>
                       </div>
@@ -596,7 +650,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">Ms. Marry &nbsp| &nbsp<font color="#0fa964">77%</font></div>
+                        <div class="titleBox">Ms. Marry</div>
                         <div class="titleBoxtime">05:45</div>
                       </a>
                       </div>
@@ -609,7 +663,7 @@ $(function(){
                         <div class="playhover">
                           <a href="/videopage.html">
                           <span class="play">&#9658;</span>
-                        <div class="titleBox">Time Check &nbsp| &nbsp<font color="#0fa964">93%</font></div>
+                        <div class="titleBox">Time Check </div>
                         <div class="titleBoxtime">16:43</div>
                       </a>
                       </div>

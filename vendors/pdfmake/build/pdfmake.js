@@ -2064,7 +2064,7 @@
 	 * var docDefinition = {
 	 * 	info: {
 	 *		title: 'awesome Document',
-	 *		author: 'Tony Custable',
+	 *		author: 'Alex Michael Kennedy',
 	 *		subject: 'subject of document',
 	 *		keywords: 'keywords for document',
 	 * 	},
