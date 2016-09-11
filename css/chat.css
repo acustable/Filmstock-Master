@@ -55,7 +55,7 @@ p { margin: 0; }
 }
 
 #live-chat header {
-	background: rgba(5, 9, 25, 0.77);
+	background: rgba(99, 99, 99, 0.85);
 	border-radius: 4px 4px 0 0;
 	color: #fff;
 	cursor: pointer;
@@ -84,7 +84,7 @@ p { margin: 0; }
 
 #live-chat form {
 	padding: 24px;
-	background-color: #111420;
+	background-color: rgb(35, 40, 49);
 }
 
 #live-chat input[type="text"] {
@@ -132,7 +132,7 @@ p { margin: 0; }
 }
 
 .chat {
-	background: rgba(38, 42, 51, 0.86);
+	background: rgba(35, 39, 48, 0.8);
 	z-index: 10;
 	display: none;
 }

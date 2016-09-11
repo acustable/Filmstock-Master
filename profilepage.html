@@ -242,7 +242,7 @@ $(function(){
         </div>
         </div>
       </div>
-      <h1 style="margin-top: 148px;position: absolute;margin-left: 9px;color: #43474f;font-size: 17px;font-weight: 400;">Recently Uploaded On: 09/02/2016</h1>
+      <h1 style="margin-top: 154px;position: absolute;margin-left: 17px;color: #43474f;font-size: 14px;font-weight: 600;">Recently Uploaded On: 09/02/2016</h1>
 
       <div class="box">
         <div class="boxInner">
@@ -339,7 +339,21 @@ $(function(){
       	</div>
         <input type="file" name="pic" accept="video/quicktime/*" style="color: #050919;font-size: 17px;font-weight: 400;">
         </form>
-      			<button class="upload-video-profile">Upload video</button>
+        <a class="btn1" href="#open-modal">Upload Video</a>
+<div id="open-modal" class="modal-window">
+<div>
+    <a href="#modal-close" title="Close" class="modal-close">X</a>
+ <h10>Your Film Is Being Uploaded</h10>
+ <div id="readout">
+    <h9 id="precentage"></h9>
+  </div>
+  <div id="loadingContainer">
+    <div id="loadingProgress"></div>
+  </div>
+</div>
+</div>
+
+
     </div>
     <label for="tab-4" tabindex="0"></label>
     <input id="tab-4" type="radio" name="tabs" aria-hidden="true">
@@ -351,7 +365,24 @@ $(function(){
   </div>
 </div>
 
+<script> var barWidth = 0;
 
+function contLoading(){
+  if(barWidth>=100){
+    document.getElementById("status").innerHTML= "Completed!";
+    document.getElementById("precentage").innerHTML= "";
+  }
+  else{
+    var percentage = document.getElementById("precentage");
+    var loadBar = document.getElementById("loadingProgress");
+    barWidth = barWidth+1;
+    loadBar.style.width = barWidth+"%";
+    percentage.innerHTML= barWidth+"%";
+  }
+}
+
+window.setInterval(contLoading, 2000);
+</script>
 
 
 
