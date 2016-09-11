@@ -1078,7 +1078,8 @@ a:visited {
 }
 .tile__details:after,
 .tile__details:before {
-  content: '';
+  content: '\f04b';
+  font-family: FontAwesome;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1097,7 +1098,8 @@ a:visited {
     z-index: 1;
 }
 .tile__details:before {
-  content: '▶';
+content: "\f04b"; <--- this is your text. You can also use UTF-8 character codes as I do here
+font-family: FontAwesome;
 left: 0;
 width: 100%;
 font-size: 29px;
