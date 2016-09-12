@@ -6434,6 +6434,7 @@ dl {
   padding: 1em !important;
   height: auto !important;
   width: auto !important;
+  overflow: visible;
 }
 
 

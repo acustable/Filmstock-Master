@@ -228,62 +228,78 @@ $(function(){
     </div>
     <label for="tab-2" tabindex="0"></label>
     <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
-    <h2 style="padding-top: 8px;">My Videos</h2>
+    <h2 style="padding-top: 8px;">My Films</h2>
     <div>
-      <div class="box">
-        <div class="boxInner">
-          <img src="./production/images/moonlit.png"/>
-          <div class="playhover">
-            <a href="/videopage.html">
-            <span class="play">&#9658;</span>
-          <div class="titleBox">Moonlit</div>
-          <div class="titleBoxtime">07:34</div>
-        </a>
-        </div>
-        </div>
-      </div>
-      <h1 style="margin-top: 154px;position: absolute;margin-left: 17px;color: #43474f;font-size: 14px;font-weight: 600;">Recently Uploaded On: 09/02/2016</h1>
-
-      <div class="box">
-        <div class="boxInner">
-          <img src="http://www.wallpapersxl.com/wallpapers/1920x1080/i-saw-the-devil/939086/i-saw-the-devil-movies-with-beautiful-cinematography-page-neogaf-939086.jpg" />
-          <div class="playhover">
-            <a href="#">
-              <span class="play">&#9658;</span>
-          <div class="titleBox">Torn</div>
-          <div class="titleBoxtime">04:35</div>
-            </a>
+      <div class="row__inner">
+        <div class="tile">
+          <div class="tile__media">
+            <img class="tile__img" src="./production/images/snatchers.png" alt=""  />
+          </div>
+          <div class="tile__details">
+            <div class="tile__title_time">
+            <i class="fa fa-clock-o" aria-hidden="true"></i> 14:50
+            </div>
+            <div class="tile__title">
+              Snatchers
+            </div>
+            <div class="tile__title_director">
+              Stephen Cedars
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="box">
-        <div class="boxInner">
-          <img src="http://content.provideocoalition.com/uploads/Marko/LightingSeries/john-dies-at-the-end-blu-ray-screenshot-0051066-I-1920.jpg" />
-          <div class="playhover">
-            <a href="#">
-            <span class="play">&#9658;</span>
-          <div class="titleBox">Walls</div>
-          <div class="titleBoxtime">09:59</div>
-        </a>
+        <div class="tile">
+          <div class="tile__media">
+            <img class="tile__img" src="./production/images/shortcut.jpg" alt=""  />
+          </div>
+          <div class="tile__details">
+            <div class="tile__title_time">
+            <i class="fa fa-clock-o" aria-hidden="true"></i> 2:10
+            </div>
+            <div class="tile__title">
+              Shortcut
+            </div>
+            <div class="tile__title_director">
+              Natasha Barber
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
 
+        <div class="tile">
+          <div class="tile__media">
+            <img class="tile__img" src="./production/images/devilinthedetails.png" alt=""  />
+          </div>
+          <div class="tile__details">
+            <div class="tile__title_time">
+            <i class="fa fa-clock-o" aria-hidden="true"></i> 15:46
+            </div>
+            <div class="tile__title">
+              Devil In the Details
+            </div>
+            <div class="tile__title_director">
+              R. Michael Chrisco
+            </div>
+          </div>
+        </div>
 
-      <div class="box">
-        <div class="boxInner">
-          <img src="https://quotily.files.wordpress.com/2013/05/stalk21.jpg" />
-          <div class="playhover">
-            <a href="#">
-            <span class="play">&#9658;</span>
-          <div class="titleBox">Stay Out Of Sewell</div>
-          <div class="titleBoxtime">06:24</div>
-        </a>
+        <div class="tile">
+          <div class="tile__media">
+            <img class="tile__img" src="./production/images/sapphire.jpg" alt=""  />
+          </div>
+          <div class="tile__details">
+            <div class="tile__title_time">
+            <i class="fa fa-clock-o" aria-hidden="true"></i> 14:43
+            </div>
+            <div class="tile__title">
+              Sapphire
+            </div>
+            <div class="tile__title_director">
+              Jia Wong
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
     </div>
+  </div>
     <label for="tab-3" tabindex="0"></label>
     <input id="tab-3" type="radio" name="tabs" aria-hidden="true">
     <h2 style="padding-top: 8px;">Upload</h2>
@@ -384,6 +400,143 @@ function contLoading(){
 window.setInterval(contLoading, 2000);
 </script>
 
+<style>
+}
+a:link,
+a:hover,
+a:active,
+a:visited {
+  -webkit-transition: color 150ms;
+  transition: color 150ms;
+  color: #95a5a6;
+  text-decoration: none;
+}
+.contain {
+  width: 100%;
+}
+.row {
+  width: 100%;
+}
+.row__inner {
+  -webkit-transition: 450ms transform;
+    transition: 450ms transform;
+    font-size: 0;
+    white-space: nowrap;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+.tile {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 140.625px;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: 450ms all;
+  transition: 450ms all;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+}
+.tile__img {
+  width: 250px;
+  height: 140.625px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tile__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  opacity: 0;
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  -webkit-transition: 450ms opacity;
+  transition: 450ms opacity;
+}
+.tile__details:after,
+.tile__details:before {
+  content: '\f04b';
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: #000;
+}
+.tile__details:after {
+  margin-top: -25px;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(236, 240, 241, 0.46);
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.tile__details:before {
+content: "\f04b"; <--- this is your text. You can also use UTF-8 character codes as I do here
+font-family: FontAwesome;
+left: 0;
+width: 100%;
+font-size: 29px;
+margin-left: 2px;
+margin-top: -19px;
+text-align: center;
+color: #fff;
+z-index: 2;
+}
+.tile:hover .tile__details {
+  opacity: 1;
+}
+.tile__title_time {
+  float: right;
+  bottom: 0;
+  padding: 11px;
+  margin-top: 100px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 300;
+}
+.tile__title_director {
+bottom: 0;
+padding: 11px;
+margin-top: 58px;
+padding-left: 16px;
+color: rgba(29, 142, 123, 0.81);
+font-size: 12px;
+font-weight: 400;
+}
+.tile__title {
+  bottom: 0;
+  padding: 10px;
+  padding-left: 16px;
+  margin-top: 0px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+.row__inner:hover {
+  -webkit-transform: translate3d(-80px, 0, 0);
+          transform: translate3d(-80px, 0, 0);
+}
+.row__inner:hover .tile {
+  opacity: 0.3;
+}
+.row__inner:hover .tile:hover {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  opacity: 1;
+}
+.tile:hover ~ .tile {
+  -webkit-transform: translate3d(200px, 0, 0);
+          transform: translate3d(200px, 0, 0);
+}
+</style>
 
 
 
