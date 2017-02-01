@@ -505,7 +505,6 @@ body {
   font-weight: 400;
   line-height: 1.471;
   -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
-  zoom: 0.8; /* Other non-webkit browsers */
   zoom: 78%; /* Webkit browsers */
   background-image: url(/production/images/basicbackground.jpg);
   background-size: 5000px;
@@ -3596,30 +3595,13 @@ h6 { font-size: 13px; }
   padding: 0 10px 5px;
 }
 .profile-card .profile-map {
-  border-top: 1px solid #cccccc;
   float: left;
   width: 100%;
 }
 .profile-card .profile-content {
-  background: #ffffff; /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(#);
-  background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-8 */
-  border: 1px solid #cccccc;
-  border-top: none;
+  color: #fff;
   margin-left: -54px;
-  -webkit-border-bottom-right-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  width: 248vmin;
 }
 .profile-card .profile-content ul li {
   float: left;
