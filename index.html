@@ -82,7 +82,7 @@
         <div id="login">
           <h1>Welcome Back!</h1>
 
-          <form action="/home.html" method="get">
+          <form action="./home.html" method="get">
 
             <div class="field-wrap">
             <label>
@@ -140,7 +140,9 @@
   </div>
 </footer>
 
-<script>$('.form').find('input, textarea').on('keyup blur focus', function (e) {
+<script>
+
+$('.form').find('input, textarea').on('keyup blur focus', function (e) {
 
   var $this = $(this),
       label = $this.prev('label');
@@ -182,7 +184,9 @@ $('.tab a').on('click', function (e) {
 
   $(target).fadeIn(600);
 
-});</script>
+});
+
+</script>
 
 <style>
 .footer-links {
