@@ -133,7 +133,7 @@ svg {
 }
 .slide:nth-child(1) .slide__bg {
   left: 0;
-  background-image: url("/production/images/snatchers.png");
+  background-image: url("./production/images/snatchers.png");
   background-size: cover;
 }
 .slide:nth-child(1) .slide__overlay-path {
@@ -154,7 +154,7 @@ svg {
 }
 .slide:nth-child(2) .slide__bg {
   left: -50%;
-  background-image: url("/production/images/moonlit.png");
+  background-image: url("./production/images/moonlit.png");
 }
 .slide:nth-child(2) .slide__overlay-path {
   fill: rgba(4, 7, 12, 0.72);
@@ -164,7 +164,7 @@ svg {
 }
 .slide:nth-child(3) .slide__bg {
   left: -100%;
-  background-image: url("/production/images/shortcut.jpg");
+  background-image: url("./production/images/shortcut.jpg");
 }
 .slide:nth-child(3) .slide__overlay-path {
   fill: rgba(4, 7, 12, 0.72);
@@ -174,7 +174,7 @@ svg {
 }
 .slide:nth-child(4) .slide__bg {
   left: -150%;
-  background-image: url("/production/images/paradesend.jpg");
+  background-image: url("./production/images/paradesend.jpg");
 }
 .slide:nth-child(4) .slide__overlay-path {
   fill: rgba(4, 7, 12, 0.72);
