@@ -1,0 +1,3 @@
+[submodule "Filmstock-Master"]
+	path = Filmstock-Master
+	url = https://github.com/acustable/Filmstock-Master.git
