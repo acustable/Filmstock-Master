@@ -118,96 +118,14 @@ $(function(){
 
 
 <div class="tabPanel-widget">
-    <label for="tab-1" tabindex="0"></label>
-      <input id="tab-1" type="radio" name="tabs" checked="true" aria-hidden="true">
-    <h2 style="padding-top: 8px;">Recent Updates</h2>
-    <div>
-<ol class="activity-feed">
-	<li class="feed-item" data-content="&#xf00c;" data-time="3 hours ago" data-color="green">
-		<section>
-			<input type="checkbox" id="expand_1" name="expand_1" />
-			<label for="expand_1">
-				<b>This film needs to be slowed down on this shot</b>
-			</label>
-			<main class="content">
-				<blockquote>This is a very cool part</blockquote>
-				<blockquote>Duis iaculis commodo condimentum. Donec quis felis libero. Nunc feugiat nisi ut ullamcorper congue. Ut tempus egestas mauris et scelerisque. Sed tincidunt ante ligula, eget pharetra mi pretium eget. Fusce tincidunt, elit blandit semper sollicitudin, sapien lectus lobortis quam, ac bibendum lectus risus quis lectus.</blockquote>
-			</main>
-		</section>
-	</li>
-	<li class="feed-item" data-content="&#xf27b;" data-time="3 hours ago" data-color="blue">
-		<section>
-			<input type="checkbox" id="expand_2" name="expand_2" />
-			<label for="expand_2">
-				<b>Have you thought about changing the tone on this part?</b>
-			</label>
-			<main class="content">
-				<p>Duis iaculis commodo condimentum. Donec quis felis libero. Nunc feugiat nisi ut ullamcorper congue.</p>
-				<p>Ut tempus egestas mauris et scelerisque. Sed tincidunt ante ligula, eget pharetra mi pretium eget. Fusce tincidunt, elit blandit semper sollicitudin, sapien lectus lobortis quam, ac bibendum lectus risus quis lectus.</p>
-			</main>
-		</section>
-	</li>
-	<li class="feed-item" data-content="&#xf004;" data-time="3 hours ago" data-color="red">
-		<section>
-			<input type="checkbox" id="expand_3" name="expand_3" />
-			<label for="expand_3">
-				<b>Is this part color graded?</b>
-			</label>
-			<main class="content">
-				<img src="http://i0.kym-cdn.com/photos/images/facebook/000/232/114/e39.png">
-			</main>
-		</section>
-	</li>
-  <li class="feed-item" data-content="&#xf27b;" data-time="3 hours ago" data-color="blue">
-		<section>
-			<input type="checkbox" id="expand_2" name="expand_2" />
-			<label for="expand_2">
-				<b>I love this!</b>
-			</label>
-			<main class="content">
-				<p>This would be a great fit for the next festival coming up.</p>
-				<p>Let me know if I can help you at all.</p>
-			</main>
-		</section>
-	</li>
-	<li class="feed-item" data-content="&#xf00c;" data-time="3 hours ago" data-color="green">
-		<section>
-			<label for="expand_4">
-        <p>This would be a great fit for the next festival coming up.</p>
-        <p>Let me know if I can help you at all.</p>
-			</label>
-		</section>
-	</li>
-	<li class="feed-item" data-content="&#xf0e7;" data-time="3 hours ago" data-color="yellow">
-		<section>
-			<input type="checkbox" id="expand_5" name="expand_5" />
-			<label for="expand_5">
-				<b>WOW!</b>
-			</label>
-			<main class="content">
-				<h1>BOOM!</h1>
-			</main>
-		</section>
-	</li>
-  <li class="feed-item" data-content="&#xf27b;" data-time="3 hours ago" data-color="blue">
-		<section>
-			<input type="checkbox" id="expand_2" name="expand_2" />
-			<label for="expand_2">
-				<b>Can I use this part for a project?</b>
-			</label>
-			<main class="content">
-				<p>Here is a link to help you www.help.com</p>
-			</main>
-		</section>
-	</li>
-</ol>
-    </div>
+
     <label for="tab-2" tabindex="0"></label>
-    <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
+    <input id="tab-2" type="radio" name="tabs" checked="true" aria-hidden="true">
     <h2 style="padding-top: 8px;">My Films</h2>
     <div>
-      <div class="row__inner">
+      <div class="rowinner">
         <div class="tile">
+          <a href="./videopage.html">
           <div class="tile__media">
             <img class="tile__img" src="./production/images/snatchers.png" alt=""  />
           </div>
@@ -222,9 +140,11 @@ $(function(){
               Stephen Cedars
             </div>
           </div>
+        </a>
         </div>
 
         <div class="tile">
+          <a href="./videopage.html">
           <div class="tile__media">
             <img class="tile__img" src="./production/images/shortcut.jpg" alt=""  />
           </div>
@@ -239,9 +159,11 @@ $(function(){
               Natasha Barber
             </div>
           </div>
+        </a>
         </div>
 
         <div class="tile">
+          <a href="./videopage.html">
           <div class="tile__media">
             <img class="tile__img" src="./production/images/devilinthedetails.png" alt=""  />
           </div>
@@ -256,9 +178,11 @@ $(function(){
               R. Michael Chrisco
             </div>
           </div>
+        </a>
         </div>
 
         <div class="tile">
+          <a href="./videopage.html">
           <div class="tile__media">
             <img class="tile__img" src="./production/images/sapphire.jpg" alt=""  />
           </div>
@@ -274,6 +198,7 @@ $(function(){
             </div>
           </div>
         </div>
+      </a>
     </div>
   </div>
     <label for="tab-3" tabindex="0"></label>
@@ -357,24 +282,7 @@ $(function(){
   </div>
 </div>
 
-<script> var barWidth = 0;
 
-function contLoading(){
-  if(barWidth>=100){
-    document.getElementById("status").innerHTML= "Completed!";
-    document.getElementById("precentage").innerHTML= "";
-  }
-  else{
-    var percentage = document.getElementById("precentage");
-    var loadBar = document.getElementById("loadingProgress");
-    barWidth = barWidth+1;
-    loadBar.style.width = barWidth+"%";
-    percentage.innerHTML= barWidth+"%";
-  }
-}
-
-window.setInterval(contLoading, 2000);
-</script>
 
 <style>
 }
@@ -392,14 +300,6 @@ a:visited {
 }
 .row {
   width: 100%;
-}
-.row__inner {
-  -webkit-transition: 450ms transform;
-    transition: 450ms transform;
-    font-size: 0;
-    white-space: nowrap;
-    margin-left: 20px;
-    padding-bottom: 10px;
 }
 .tile {
   position: relative;
@@ -495,18 +395,6 @@ font-weight: 400;
   color: #fff;
   font-size: 15px;
   font-weight: 400;
-}
-.row__inner:hover {
-  -webkit-transform: translate3d(-80px, 0, 0);
-          transform: translate3d(-80px, 0, 0);
-}
-.row__inner:hover .tile {
-  opacity: 0.3;
-}
-.row__inner:hover .tile:hover {
-  -webkit-transform: scale(1.6);
-          transform: scale(1.6);
-  opacity: 1;
 }
 .tile:hover .tile {
   -webkit-transform: translate3d(200px, 0, 0);

@@ -353,6 +353,7 @@ textarea {
   overflow: hidden;
   width: 750px;
   color: #fff;
+  font-size: 15px;
 }
 
 .comments .actions {
